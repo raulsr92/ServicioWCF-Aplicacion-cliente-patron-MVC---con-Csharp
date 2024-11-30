@@ -158,6 +158,8 @@ namespace WCF_Matriculas
                 throw new Exception(ex.Message);
             }
         }
+        
+        // Operaciones de consulta de negocio
 
         public List<CursoDC> ListarCurso2()
         {

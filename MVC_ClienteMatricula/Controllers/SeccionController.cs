@@ -8,6 +8,7 @@ using System.Web.Mvc;
 
 using MVC_ClienteMatricula.ProxySecciones;
 using MVC_ClienteMatricula.ProxyCursos;
+using MVC_ClienteMatricula.ProxyProfesores;
 
 namespace MVC_ClienteMatricula.Controllers
 {
@@ -17,6 +18,9 @@ namespace MVC_ClienteMatricula.Controllers
 
         ServicioSeccionesClient miServSecciones = new ServicioSeccionesClient();
         ServicioCursosClient miServCursos = new ServicioCursosClient();
+        
+        ServicioProfesoresClient miServProfesores = new ServicioProfesoresClient();
+
 
 
         // 3° Métodos para llenar los COMBO BOX 
@@ -42,6 +46,27 @@ namespace MVC_ClienteMatricula.Controllers
 
         }
 
+        // Método para devolver la colección de Profesores (para Combo Box)
+
+        public List<SelectListItem> ObtenerProfesores(String strProfesor)
+
+        {
+            List<SelectListItem> items = new SelectList(miServProfesores.ListarProfesor2(), "Cod_Pro", "NombreCompleto").ToList();
+
+            // Insertar en la posicion 0, el item con texto: Seleccione Marca y valor 0
+
+            items.Insert(0, (new SelectListItem { Text = "Seleccione Profesor", Value = "0" }));
+
+            SelectListItem itemSel = new SelectListItem();
+
+            itemSel = items.Where(x => x.Value == strProfesor).FirstOrDefault();
+
+            itemSel.Selected = true;
+
+            return items;
+
+        }
+
 
         // 4° Action Result INDEX
 
@@ -55,6 +80,8 @@ namespace MVC_ClienteMatricula.Controllers
 
             ViewBag.ListarCursos = ObtenerCursos("0");
 
+            ViewBag.ListarProfesores = ObtenerProfesores("0");
+
             return View();
         }
 
@@ -66,6 +93,8 @@ namespace MVC_ClienteMatricula.Controllers
 
             String strcriterioCurso = fc["cboCursos"];
 
+            String strcriterioProfesor = fc["cboProfesores"];
+
             String strCondicion = fc["condicion"];
 
             // 5.2 Si se elige el criterio de búsqueda "Por cursos", devuelve las secciones del curso seleccionado
@@ -74,15 +103,31 @@ namespace MVC_ClienteMatricula.Controllers
             {
                 ViewBag.ListarSecciones = miServSecciones.ListarSeccionCurso(strcriterioCurso);
                 ViewBag.ListarCursos = ObtenerCursos(strcriterioCurso);
+                ViewBag.ListarProfesores = ObtenerProfesores("0");
 
                 ViewBag.Cantidad = miServSecciones.ListarSeccionCurso(strcriterioCurso).Count();
+            }             
+            
+            // 5.3 Si se elige el criterio de búsqueda "Por profesores", devuelve las secciones del profesor seleccionado
+
+
+            else if (strCondicion.Equals("PorProfesor"))
+            {
+                ViewBag.ListarSecciones = miServSecciones.ListarSeccionProfesor(strcriterioProfesor);
+                ViewBag.ListarCursos = ObtenerCursos("0");
+                ViewBag.ListarProfesores = ObtenerProfesores(strcriterioProfesor);
+
+                ViewBag.Cantidad = miServSecciones.ListarSeccionProfesor(strcriterioProfesor).Count();
+
             }
-            // 5.3 Si no se elige criterio de búsqueda , devuelve todas las secciones disponibles
+            // 5.4 Si no se elige criterio de búsqueda , devuelve todas las secciones disponibles
 
             else
             {
                 ViewBag.ListarSecciones = miServSecciones.ListarSeccion2();
                 ViewBag.ListarCursos = ObtenerCursos("0");
+                ViewBag.ListarProfesores = ObtenerProfesores("0");
+                ViewBag.Cantidad = miServSecciones.ListarSeccion2().Count();
             }
 
             return View("Index");

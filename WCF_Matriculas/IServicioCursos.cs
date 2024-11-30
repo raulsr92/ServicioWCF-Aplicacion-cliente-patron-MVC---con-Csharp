@@ -22,6 +22,9 @@ namespace WCF_Matriculas
         [OperationContract]
         List<CursoDC> ListarCurso();
 
+
+        // Operaciones de consulta de negocio
+
         [OperationContract]
         List<CursoDC> ListarCurso2();
 

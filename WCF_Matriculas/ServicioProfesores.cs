@@ -200,6 +200,8 @@ namespace WCF_Matriculas
             }
         }
 
+        // Operaciones de consulta de negocio
+
         public List<ProfesorDC> ListarProfesor2()
         {
             try
@@ -352,6 +354,10 @@ namespace WCF_Matriculas
 
         }
 
+
+        //--------------------
+
+        //Ya no se usará porque no agrega valor
         public List<ProfesorDC> ObtenerCargaTrabajoProfesor(string periodo)
         {
             try
@@ -386,7 +392,7 @@ namespace WCF_Matriculas
             }
         }
 
-
+        //Ya no se usará, se cambió por ListarProfesorCurso( )
         public List<ProfesorDC> ObtenerProfesoresPorCurso(string strCodCurso)
         {
             try
@@ -421,7 +427,7 @@ namespace WCF_Matriculas
             }
         }
 
-
+        //Ya no se usará, se cambió por ListarProfesorEspecialidad( )
         public List<ProfesorDC> ObtenerProfesoresPorEspecialidad(string strCodCurso)
         {
             try

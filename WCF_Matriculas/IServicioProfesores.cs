@@ -22,7 +22,7 @@ namespace WCF_Matriculas
         [OperationContract]
         List<ProfesorDC> ListarProfesor();
 
-        // Servicio de consulta de negocio
+        // Operaciones de consulta de negocio
 
         [OperationContract]
         List<ProfesorDC> ListarProfesor2();
@@ -33,14 +33,15 @@ namespace WCF_Matriculas
         [OperationContract]
         List<ProfesorDC> ListarProfesorCurso(string strCodCurso);
 
+        //--------------------
 
-        [OperationContract]
+        [OperationContract] //Ya no se usará porque no agrega valor
         List<ProfesorDC> ObtenerCargaTrabajoProfesor(string periodo);
 
-        [OperationContract]
+        [OperationContract] //Ya no se usará, se cambió por ListarProfesorCurso( )
         List<ProfesorDC> ObtenerProfesoresPorCurso(string strCodCurso);
 
-        [OperationContract]
+        [OperationContract] //Ya no se usará, se cambió por ListarProfesorEspecialidad( )
         List<ProfesorDC> ObtenerProfesoresPorEspecialidad(string strCodEspecialidad);
 
     }

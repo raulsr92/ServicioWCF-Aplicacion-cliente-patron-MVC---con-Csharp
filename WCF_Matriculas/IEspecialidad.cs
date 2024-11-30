@@ -11,6 +11,8 @@ namespace WCF_Matriculas
     [ServiceContract]
     public interface IEspecialidad
     {
+        // Operaciones de consulta de negocio
+
         [OperationContract]
         List<DCEspecialidad> ListarEspecialidad();
     }

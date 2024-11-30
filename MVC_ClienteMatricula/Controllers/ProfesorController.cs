@@ -106,6 +106,7 @@ namespace MVC_ClienteMatricula.Controllers
                 ViewBag.ListarProfesores = miServProfesores.ListarProfesor2();
                 ViewBag.ListarEspecialidades = ObtenerEspecialidades("0");
                 ViewBag.ListarCursos = ObtenerCursos("0");
+                ViewBag.Cantidad = miServProfesores.ListarProfesor2().Count();
 
             }
 

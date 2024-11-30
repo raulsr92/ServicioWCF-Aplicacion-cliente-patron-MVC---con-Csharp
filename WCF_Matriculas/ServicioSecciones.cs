@@ -181,6 +181,8 @@ namespace WCF_Matriculas
         }
 
 
+        // Operaciones de consulta de negocio
+
         public List<SeccionDC> ListarSeccion2()
         {
             try
@@ -268,6 +270,54 @@ namespace WCF_Matriculas
             }
         }
 
+
+        public List<SeccionDC> ListarSeccionProfesor(string strCodProfesor)
+        {
+            try
+            {
+                // Instanciar el modelo
+                DBMatricula2Entities misProfesores = new DBMatricula2Entities();
+
+                // creamos la lista para retornar
+                List<SeccionDC> listaseccion = new List<SeccionDC>();
+
+                // Obtener la lista de SECCIONES
+                var query = misProfesores.Tb_Seccion.Where(miCurso => miCurso.Cod_Pro == strCodProfesor).ToList();
+
+                //recorrer la lista
+                foreach (var resultado in query)
+                {
+                    //Crear un objeto de seccion DC para que se vayan creando en c/iteración
+                    SeccionDC objSeccion = new SeccionDC();
+
+                    objSeccion.Id_Seccion = resultado.Id_Seccion;
+                    objSeccion.Nom_Curso = resultado.Tb_Cursos.Des_Cur;
+                    objSeccion.Horario = resultado.Tb_Horario.DiaSem_Hor + " : " +
+                                          resultado.Tb_Horario.Ini_Hor + " - " +
+                                          resultado.Tb_Horario.Fin_Hor;
+                    objSeccion.NombreCompletoProfesor = resultado.Tb_Profesores.Nom_Pro + "  " +
+                                                        resultado.Tb_Profesores.Ape_Pro;
+                    objSeccion.Sede = resultado.Tb_Sede.Desc_Sed;
+                    objSeccion.Num_Aula = resultado.Num_Aula;
+                    objSeccion.cupo = Convert.ToInt16(resultado.cupo);
+
+                    listaseccion.Add(objSeccion);
+                }
+
+                return listaseccion;
+
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
+
+        }
+        //--------------------
+
+
+        //Ya no se usará, se cambió por ListarSeccionCurso
         public List<SeccionDC> ObtenerSeccionesPorCurso(string strCodCurso)
         {
             try

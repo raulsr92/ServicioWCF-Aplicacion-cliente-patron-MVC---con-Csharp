@@ -376,6 +376,12 @@ namespace MVC_ClienteMatricula.ProxySecciones {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioSecciones/ListarSeccionCurso", ReplyAction="http://tempuri.org/IServicioSecciones/ListarSeccionCursoResponse")]
         System.Threading.Tasks.Task<MVC_ClienteMatricula.ProxySecciones.SeccionDC[]> ListarSeccionCursoAsync(string strCodCurso);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioSecciones/ListarSeccionProfesor", ReplyAction="http://tempuri.org/IServicioSecciones/ListarSeccionProfesorResponse")]
+        MVC_ClienteMatricula.ProxySecciones.SeccionDC[] ListarSeccionProfesor(string strCodProfesor);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioSecciones/ListarSeccionProfesor", ReplyAction="http://tempuri.org/IServicioSecciones/ListarSeccionProfesorResponse")]
+        System.Threading.Tasks.Task<MVC_ClienteMatricula.ProxySecciones.SeccionDC[]> ListarSeccionProfesorAsync(string strCodProfesor);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioSecciones/ObtenerSeccionesPorCurso", ReplyAction="http://tempuri.org/IServicioSecciones/ObtenerSeccionesPorCursoResponse")]
         MVC_ClienteMatricula.ProxySecciones.SeccionDC[] ObtenerSeccionesPorCurso(string strCodCurso);
         
@@ -464,6 +470,14 @@ namespace MVC_ClienteMatricula.ProxySecciones {
         
         public System.Threading.Tasks.Task<MVC_ClienteMatricula.ProxySecciones.SeccionDC[]> ListarSeccionCursoAsync(string strCodCurso) {
             return base.Channel.ListarSeccionCursoAsync(strCodCurso);
+        }
+        
+        public MVC_ClienteMatricula.ProxySecciones.SeccionDC[] ListarSeccionProfesor(string strCodProfesor) {
+            return base.Channel.ListarSeccionProfesor(strCodProfesor);
+        }
+        
+        public System.Threading.Tasks.Task<MVC_ClienteMatricula.ProxySecciones.SeccionDC[]> ListarSeccionProfesorAsync(string strCodProfesor) {
+            return base.Channel.ListarSeccionProfesorAsync(strCodProfesor);
         }
         
         public MVC_ClienteMatricula.ProxySecciones.SeccionDC[] ObtenerSeccionesPorCurso(string strCodCurso) {

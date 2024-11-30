@@ -41,6 +41,20 @@
                        (IEnumerable<SelectListItem>)ViewBag.ListarCursos, new { @class = "select-element-filter", style = "width: 300px ; height: 30px; border: 2px solid #6439ff; border-radius:8px; color: #6439ff; padding-left:10px;", })
                     </td>
                 </tr>
+
+                <tr class="filter-table-row" style="height:5px">
+
+                <tr class="filter-table-row">
+                    <td class="filter-table-cell radio-button-content">
+                        <input type="radio" name="condicion" value="PorProfesor" />
+                        <span>Por Profesor</span>
+                    </td>
+                    <td class="filter-table-cell">
+                        @Html.DropDownList("cboProfesores",
+                       (IEnumerable<SelectListItem>)ViewBag.ListarProfesores, new { @class = "select-element-filter", style = "width: 300px ; height: 30px; border: 2px solid #6439ff; border-radius:8px; color: #6439ff; padding-left:10px;", })
+                    </td>
+                </tr>
+
                 <tr class="filter-table-row" style="height:10px">
                 </tr>
                 <tr class="filter-table-row">
@@ -56,7 +70,7 @@
 
                 <tr class="filter-table-row">
                     <td class="filter-table-cell radio-button-content">
-                        <strong>Cantidad de profesores:</strong>
+                        <strong>Cantidad de Secciones:</strong>
                     </td>
                     <td class="filter-table-cell">
                         <strong> @ViewBag.Cantidad</strong>

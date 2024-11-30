@@ -10,6 +10,9 @@ namespace WCF_Matriculas
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Especialidad" in both code and config file together.
     public class Especialidad : IEspecialidad
     {
+
+        // Operaciones de consulta de negocio
+
         public List<DCEspecialidad> ListarEspecialidad()
         {
             try
