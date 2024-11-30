@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+    <style>
+        .fila-colorida {
+            background-color: lightblue;
+            font: bold;
+        }
+
+        .centrar-fila th {
+            text-align: center;
+        }
+    </style>
+    <main class="body-content">
+
+        <h3>LISTADO DE CURSOS</h3>
+        <table class="table">
+            <tr class="fila-colorida centrar-fila table-info">
+                <th class="head--table">Codigo</th>
+                <th class="head--table">Descripcion</th>
+                <th class="head--table">Créditos</th>
+                <th class="head--table">Cantidad profesores por curso</th>
+                <th class="head--table">Cantidad secciones (horarios) por curso</th>
+
+            </tr>
+            @* Se obtiene el listado de marcas desde el viewBag ListarMarcas*@
+            @foreach (var curso in ViewBag.ListarCursos)
+            {
+                <tr>
+                    <th style="text-align: center;">@curso.Cod_Cur</th>
+                    <th style="text-align: center;">@curso.Des_Cur</th>
+                    <th style="text-align: center;">@curso.Cred_Cur</th>
+
+                    <th style="text-align: center;">@curso.cantProfesores</th>
+                    <th style="text-align: center;">@curso.cantSecciones</th>
+
+                </tr>
+            }
+        </table>
+    </main>
+
+</body>
+</html>

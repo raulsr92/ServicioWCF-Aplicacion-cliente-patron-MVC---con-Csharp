@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+
+<body>
+    <style>
+        .fila-colorida {
+            background-color: lightblue;
+            font: bold;
+        }
+
+        .centrar-fila th {
+            text-align: center;
+        }
+    </style>
+    <main class="body-content">
+        <h3 class="main-title" style="color: #6439ff">LISTADO DE ESPECIALIDADES</h3>
+        <table class="table">
+            <tr class="fila-colorida centrar-fila table-info">
+                <th class="head--table">Codigo</th>
+                <th class="head--table">Descripcion</th>
+                <th class="head--table">Cantidad profesores por especialidad</th>
+            </tr>
+            @* Se obtiene el listado de marcas desde el viewBag ListarMarcas*@
+            @foreach (var marca in ViewBag.ListarEspecialidades)
+            {
+                <tr>
+                    <th style="text-align: center;">@marca.codEsp</th>
+                    <th style="text-align: center;">@marca.desEsp</th>
+                    <th style="text-align: center;">@marca.cantProfesores</th>
+                </tr>
+            }
+        </table>
+
+    </main>
+
+</body>
+</html>

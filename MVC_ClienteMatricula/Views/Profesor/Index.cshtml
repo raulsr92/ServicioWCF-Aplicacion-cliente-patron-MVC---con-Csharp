@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+    <style>
+        .fila-cabecera {
+            background-color: black;
+            color: white;
+        }
+
+        .centrar-fila th {
+            text-align: center;
+        }
+    </style>
+    <main class="body-content">
+        <h3>LISTADO DE PROFESORES CON FILTRO </h3>
+        @using (Html.BeginForm("Buscar", "Profesor"))
+        {
+            <table class="table-bordered filter-table" width="600">
+                <tr class="fila-cabecera filter-table-row filter-header" style="background-color: #7CF5FF">
+                    <th colspan="2" style="text-align: center;" class="head--table table-info">Seleccione tipo de criterio de búsqueda</th>
+                </tr>
+                <tr class="filter-table-row" style="height:10px">
+
+                <tr class="filter-table-row">
+                    <td class="filter-table-cell radio-button-content">
+                        <input type="radio" name="condicion" value="Todas" checked="true" />
+                        <span>Todas</span>
+                    </td>
+                    <td class="filter-table-cell">
+                    </td>
+                    <td class="filter-table-cell">
+                    </td>
+                </tr>
+                <tr class="filter-table-row">
+                    <td class="filter-table-cell radio-button-content">
+                        <input type="radio" name="condicion" value="PorEspecialidad" />
+                        <span>Por Especialidad</span>
+                    </td>
+                    <td class="filter-table-cell">
+                        @Html.DropDownList("cboEspecialidades",
+                       (IEnumerable<SelectListItem>)ViewBag.ListarEspecialidades, new { @class = "select-element-filter", style = "width: 300px ; height: 30px; border: 2px solid #6439ff; border-radius:8px; color: #6439ff; padding-left:10px;", })
+                    </td>
+                </tr>
+
+                <tr class="filter-table-row" style="height:5px">
+
+
+                <tr class="filter-table-row">
+                    <td class="filter-table-cell radio-button-content">
+                        <input type="radio" name="condicion" value="PorCurso" />
+                        <span>Por Curso</span>
+                    </td>
+                    <td class="filter-table-cell">
+                        @Html.DropDownList("cboCursos",
+                       (IEnumerable<SelectListItem>)ViewBag.ListarCursos, new { @class = "select-element-filter", style = "width: 300px ; height: 30px; border: 2px solid #6439ff; border-radius:8px; color: #6439ff; padding-left:10px;", })
+                    </td>
+                </tr>
+
+                <tr class="filter-table-row" style="height:10px">
+
+
+                <tr class="filter-table-row">
+                    <td class="filter-table-cell">
+                    </td>
+                    <td class="filter-table-cell">
+                        <input class="filter-button" type="submit" name="Buscar" />
+                    </td>
+
+                </tr>
+                <tr class="filter-table-row" style="height:10px">
+
+                <tr class="filter-table-row">
+                    <td class="filter-table-cell radio-button-content">
+                        <strong>Cantidad de profesores:</strong>
+                    </td>
+                    <td class="filter-table-cell">
+                        <strong> @ViewBag.Cantidad</strong>
+                    </td>
+
+                </tr>
+
+                <tr class="filter-table-row" style="height:10px">
+
+            </table>
+        }
+        <br />
+        @*Cabecera de listado*@
+        <table class="table-bordered data-table" width="1200">
+            <tr class="fila-cabecera centrar-fila row-main">
+                <th class="head--table">Código</th>
+                <th class="head--table">Nombres y Apellidos</th>
+                <th class="head--table">Especialidad</th>
+                <th class="head--table">Correo </th>
+                <th class="head--table">Dirección</th>
+                <th class="head--table">Secciones asignadas</th>
+
+            </tr>
+            @*Listado de autos*@
+            @foreach (var profesor in ViewBag.ListarProfesores)
+            {
+
+                <tr>
+                    <th style="text-align: center;" class="content-table-text">@profesor.Cod_Pro</th>
+                    <th style="text-align: center;" class="content-table-text">@profesor.NombreCompleto</th>
+                    <th style="text-align: center;" class="content-table-text">@profesor.Especialidad</th>
+                    <th style="text-align: center;" class="content-table-text">@profesor.Email_Pro</th>
+                    <th style="text-align: center;" class="content-table-text">@profesor.Direccion_Pro</th>
+
+                    <th style="text-align: center;">@profesor.Numero_secciones</th>
+                </tr>
+            }
+
+        </table>
+    </main>
+
+
+</body>
+</html>

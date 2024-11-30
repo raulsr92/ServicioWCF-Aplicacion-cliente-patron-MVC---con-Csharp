@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBMatricula2ModelStoreContainer" CdmEntityContainer="DBMatricula2Entities">
+    <EntitySetMapping Name="Tb_Cursos">
+      <EntityTypeMapping TypeName="DBMatricula2Model.Tb_Cursos">
+        <MappingFragment StoreEntitySet="Tb_Cursos">
+          <ScalarProperty Name="Cod_Cur" ColumnName="Cod_Cur" />
+          <ScalarProperty Name="Des_Cur" ColumnName="Des_Cur" />
+          <ScalarProperty Name="Cred_Cur" ColumnName="Cred_Cur" />
+          <ScalarProperty Name="Usu_Reg" ColumnName="Usu_Reg" />
+          <ScalarProperty Name="Fec_Reg" ColumnName="Fec_Reg" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+          <ScalarProperty Name="Est_Cur" ColumnName="Est_Cur" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tb_Especialidad">
+      <EntityTypeMapping TypeName="DBMatricula2Model.Tb_Especialidad">
+        <MappingFragment StoreEntitySet="Tb_Especialidad">
+          <ScalarProperty Name="Cod_Esp" ColumnName="Cod_Esp" />
+          <ScalarProperty Name="Des_Esp" ColumnName="Des_Esp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tb_Estudiantes">
+      <EntityTypeMapping TypeName="DBMatricula2Model.Tb_Estudiantes">
+        <MappingFragment StoreEntitySet="Tb_Estudiantes">
+          <ScalarProperty Name="Cod_Est" ColumnName="Cod_Est" />
+          <ScalarProperty Name="Nom_Est" ColumnName="Nom_Est" />
+          <ScalarProperty Name="Ape_Est" ColumnName="Ape_Est" />
+          <ScalarProperty Name="Tel_Est" ColumnName="Tel_Est" />
+          <ScalarProperty Name="Email_Est" ColumnName="Email_Est" />
+          <ScalarProperty Name="Id_Ubigeo" ColumnName="Id_Ubigeo" />
+          <ScalarProperty Name="direccion_Est" ColumnName="direccion_Est" />
+          <ScalarProperty Name="Fec_Nac_Est" ColumnName="Fec_Nac_Est" />
+          <ScalarProperty Name="DNI_Pro" ColumnName="DNI_Pro" />
+          <ScalarProperty Name="Usu_Reg" ColumnName="Usu_Reg" />
+          <ScalarProperty Name="Fec_Reg" ColumnName="Fec_Reg" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+          <ScalarProperty Name="Est_Est" ColumnName="Est_Est" />
+          <ScalarProperty Name="Foto_Est" ColumnName="Foto_Est" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tb_Horario">
+      <EntityTypeMapping TypeName="DBMatricula2Model.Tb_Horario">
+        <MappingFragment StoreEntitySet="Tb_Horario">
+          <ScalarProperty Name="Cod_Hor" ColumnName="Cod_Hor" />
+          <ScalarProperty Name="DiaSem_Hor" ColumnName="DiaSem_Hor" />
+          <ScalarProperty Name="Ini_Hor" ColumnName="Ini_Hor" />
+          <ScalarProperty Name="Fin_Hor" ColumnName="Fin_Hor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tb_Matricula">
+      <EntityTypeMapping TypeName="DBMatricula2Model.Tb_Matricula">
+        <MappingFragment StoreEntitySet="Tb_Matricula">
+          <ScalarProperty Name="Cod_Matri" ColumnName="Cod_Matri" />
+          <ScalarProperty Name="Fec_Matri" ColumnName="Fec_Matri" />
+          <ScalarProperty Name="Cod_Est" ColumnName="Cod_Est" />
+          <ScalarProperty Name="Cod_Per" ColumnName="Cod_Per" />
+          <ScalarProperty Name="Usu_Reg" ColumnName="Usu_Reg" />
+          <ScalarProperty Name="Fec_Reg" ColumnName="Fec_Reg" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+          <ScalarProperty Name="Est_Matri" ColumnName="Est_Matri" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tb_Periodo">
+      <EntityTypeMapping TypeName="DBMatricula2Model.Tb_Periodo">
+        <MappingFragment StoreEntitySet="Tb_Periodo">
+          <ScalarProperty Name="Cod_Per" ColumnName="Cod_Per" />
+          <ScalarProperty Name="Nom_Per" ColumnName="Nom_Per" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tb_Profesores">
+      <EntityTypeMapping TypeName="DBMatricula2Model.Tb_Profesores">
+        <MappingFragment StoreEntitySet="Tb_Profesores">
+          <ScalarProperty Name="Cod_Pro" ColumnName="Cod_Pro" />
+          <ScalarProperty Name="Nom_Pro" ColumnName="Nom_Pro" />
+          <ScalarProperty Name="Ape_Pro" ColumnName="Ape_Pro" />
+          <ScalarProperty Name="direccion_Pro" ColumnName="direccion_Pro" />
+          <ScalarProperty Name="email_Pro" ColumnName="email_Pro" />
+          <ScalarProperty Name="Fec_Nac_Pro" ColumnName="Fec_Nac_Pro" />
+          <ScalarProperty Name="DNI_Pro" ColumnName="DNI_Pro" />
+          <ScalarProperty Name="Cod_Espec" ColumnName="Cod_Espec" />
+          <ScalarProperty Name="Id_Ubigeo" ColumnName="Id_Ubigeo" />
+          <ScalarProperty Name="Usu_Reg" ColumnName="Usu_Reg" />
+          <ScalarProperty Name="Fec_Reg" ColumnName="Fec_Reg" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+          <ScalarProperty Name="Est_Pro" ColumnName="Est_Pro" />
+          <ScalarProperty Name="Foto_Pro" ColumnName="Foto_Pro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tb_Seccion">
+      <EntityTypeMapping TypeName="DBMatricula2Model.Tb_Seccion">
+        <MappingFragment StoreEntitySet="Tb_Seccion">
+          <ScalarProperty Name="Id_Seccion" ColumnName="Id_Seccion" />
+          <ScalarProperty Name="Cod_Cur" ColumnName="Cod_Cur" />
+          <ScalarProperty Name="Cod_Hor" ColumnName="Cod_Hor" />
+          <ScalarProperty Name="Cod_Pro" ColumnName="Cod_Pro" />
+          <ScalarProperty Name="Cod_Sed" ColumnName="Cod_Sed" />
+          <ScalarProperty Name="Modalidad" ColumnName="Modalidad" />
+          <ScalarProperty Name="Num_Aula" ColumnName="Num_Aula" />
+          <ScalarProperty Name="cupo" ColumnName="cupo" />
+          <ScalarProperty Name="Usu_Reg" ColumnName="Usu_Reg" />
+          <ScalarProperty Name="Fec_Reg" ColumnName="Fec_Reg" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+          <ScalarProperty Name="Est_Sec" ColumnName="Est_Sec" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tb_Sede">
+      <EntityTypeMapping TypeName="DBMatricula2Model.Tb_Sede">
+        <MappingFragment StoreEntitySet="Tb_Sede">
+          <ScalarProperty Name="Cod_Sed" ColumnName="Cod_Sed" />
+          <ScalarProperty Name="Desc_Sed" ColumnName="Desc_Sed" />
+          <ScalarProperty Name="Id_Ubigeo" ColumnName="Id_Ubigeo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tb_Ubigeo">
+      <EntityTypeMapping TypeName="DBMatricula2Model.Tb_Ubigeo">
+        <MappingFragment StoreEntitySet="Tb_Ubigeo">
+          <ScalarProperty Name="Id_Ubigeo" ColumnName="Id_Ubigeo" />
+          <ScalarProperty Name="IdDepa" ColumnName="IdDepa" />
+          <ScalarProperty Name="IdProv" ColumnName="IdProv" />
+          <ScalarProperty Name="IdDist" ColumnName="IdDist" />
+          <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="Distrito" ColumnName="Distrito" />
+          <ScalarProperty Name="Cod_Ven" ColumnName="Cod_Ven" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tb_Usuario">
+      <EntityTypeMapping TypeName="DBMatricula2Model.Tb_Usuario">
+        <MappingFragment StoreEntitySet="Tb_Usuario">
+          <ScalarProperty Name="Login_Usu" ColumnName="Login_Usu" />
+          <ScalarProperty Name="Pass_Usu" ColumnName="Pass_Usu" />
+          <ScalarProperty Name="Niv_Usu" ColumnName="Niv_Usu" />
+          <ScalarProperty Name="Est_Usu" ColumnName="Est_Usu" />
+          <ScalarProperty Name="Fec_Reg" ColumnName="Fec_Reg" />
+          <ScalarProperty Name="Usu_Reg" ColumnName="Usu_Reg" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="Tb_Detalle_Matricula" TypeName="DBMatricula2Model.Tb_Detalle_Matricula" StoreEntitySet="Tb_Detalle_Matricula">
+      <EndProperty Name="Tb_Matricula">
+        <ScalarProperty Name="Cod_Matri" ColumnName="Cod_Matri" />
+      </EndProperty>
+      <EndProperty Name="Tb_Seccion">
+        <ScalarProperty Name="Id_Seccion" ColumnName="Id_Seccion" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="usp_ActualizarCursos" FunctionName="DBMatricula2Model.Store.usp_ActualizarCursos" />
+    <FunctionImportMapping FunctionImportName="usp_ActualizarEstudiantes" FunctionName="DBMatricula2Model.Store.usp_ActualizarEstudiantes" />
+    <FunctionImportMapping FunctionImportName="usp_ActualizarProfesor" FunctionName="DBMatricula2Model.Store.usp_ActualizarProfesor" />
+    <FunctionImportMapping FunctionImportName="usp_ConsultarCursos" FunctionName="DBMatricula2Model.Store.usp_ConsultarCursos">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBMatricula2Model.usp_ConsultarCursos_Result">
+          <ScalarProperty Name="Cod_Cur" ColumnName="Cod_Cur" />
+          <ScalarProperty Name="Des_Cur" ColumnName="Des_Cur" />
+          <ScalarProperty Name="Cred_Cur" ColumnName="Cred_Cur" />
+          <ScalarProperty Name="Usu_Reg" ColumnName="Usu_Reg" />
+          <ScalarProperty Name="Fec_Reg" ColumnName="Fec_Reg" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+          <ScalarProperty Name="Est_Cur" ColumnName="Est_Cur" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_ConsultarEstudiantes" FunctionName="DBMatricula2Model.Store.usp_ConsultarEstudiantes">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBMatricula2Model.usp_ConsultarEstudiantes_Result">
+          <ScalarProperty Name="Cod_Est" ColumnName="Cod_Est" />
+          <ScalarProperty Name="Nom_Est" ColumnName="Nom_Est" />
+          <ScalarProperty Name="Ape_Est" ColumnName="Ape_Est" />
+          <ScalarProperty Name="Tel_Est" ColumnName="Tel_Est" />
+          <ScalarProperty Name="Email_Est" ColumnName="Email_Est" />
+          <ScalarProperty Name="Id_Ubigeo" ColumnName="Id_Ubigeo" />
+          <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="Distrito" ColumnName="Distrito" />
+          <ScalarProperty Name="Foto_Est" ColumnName="Foto_Est" />
+          <ScalarProperty Name="direccion_Est" ColumnName="direccion_Est" />
+          <ScalarProperty Name="Fec_Nac_Est" ColumnName="Fec_Nac_Est" />
+          <ScalarProperty Name="DNI_Pro" ColumnName="DNI_Pro" />
+          <ScalarProperty Name="Usu_Reg" ColumnName="Usu_Reg" />
+          <ScalarProperty Name="Fec_Reg" ColumnName="Fec_Reg" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+          <ScalarProperty Name="Est_Est" ColumnName="Est_Est" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_ConsultarProfesor" FunctionName="DBMatricula2Model.Store.usp_ConsultarProfesor">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBMatricula2Model.usp_ConsultarProfesor_Result">
+          <ScalarProperty Name="Cod_Pro" ColumnName="Cod_Pro" />
+          <ScalarProperty Name="Nom_Pro" ColumnName="Nom_Pro" />
+          <ScalarProperty Name="Ape_Pro" ColumnName="Ape_Pro" />
+          <ScalarProperty Name="Foto_Pro" ColumnName="Foto_Pro" />
+          <ScalarProperty Name="direccion_Pro" ColumnName="direccion_Pro" />
+          <ScalarProperty Name="email_Pro" ColumnName="email_Pro" />
+          <ScalarProperty Name="Fec_Nac_Pro" ColumnName="Fec_Nac_Pro" />
+          <ScalarProperty Name="DNI_Pro" ColumnName="DNI_Pro" />
+          <ScalarProperty Name="Cod_Espec" ColumnName="Cod_Espec" />
+          <ScalarProperty Name="Des_Esp" ColumnName="Des_Esp" />
+          <ScalarProperty Name="Id_Ubigeo" ColumnName="Id_Ubigeo" />
+          <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="Distrito" ColumnName="Distrito" />
+          <ScalarProperty Name="Usu_Reg" ColumnName="Usu_Reg" />
+          <ScalarProperty Name="Fec_Reg" ColumnName="Fec_Reg" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+          <ScalarProperty Name="Est_Pro" ColumnName="Est_Pro" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_ConsultartCursos" FunctionName="DBMatricula2Model.Store.usp_ConsultartCursos">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBMatricula2Model.usp_ConsultartCursos_Result">
+          <ScalarProperty Name="Cod_Cur" ColumnName="Cod_Cur" />
+          <ScalarProperty Name="Des_Cur" ColumnName="Des_Cur" />
+          <ScalarProperty Name="Cred_Cur" ColumnName="Cred_Cur" />
+          <ScalarProperty Name="Usu_Reg" ColumnName="Usu_Reg" />
+          <ScalarProperty Name="Fec_Reg" ColumnName="Fec_Reg" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+          <ScalarProperty Name="Est_Cur" ColumnName="Est_Cur" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_ConsultarUsuario" FunctionName="DBMatricula2Model.Store.usp_ConsultarUsuario">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBMatricula2Model.usp_ConsultarUsuario_Result">
+          <ScalarProperty Name="Login_Usu" ColumnName="Login_Usu" />
+          <ScalarProperty Name="Pass_Usu" ColumnName="Pass_Usu" />
+          <ScalarProperty Name="Niv_Usu" ColumnName="Niv_Usu" />
+          <ScalarProperty Name="Est_Usu" ColumnName="Est_Usu" />
+          <ScalarProperty Name="Fec_Reg" ColumnName="Fec_Reg" />
+          <ScalarProperty Name="Usu_Reg" ColumnName="Usu_Reg" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_EliminarCursos" FunctionName="DBMatricula2Model.Store.usp_EliminarCursos" />
+    <FunctionImportMapping FunctionImportName="usp_EliminarEstudiante" FunctionName="DBMatricula2Model.Store.usp_EliminarEstudiante" />
+    <FunctionImportMapping FunctionImportName="usp_EliminarProfesor" FunctionName="DBMatricula2Model.Store.usp_EliminarProfesor" />
+    <FunctionImportMapping FunctionImportName="usp_Especialidad_Descripcion" FunctionName="DBMatricula2Model.Store.usp_Especialidad_Descripcion">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBMatricula2Model.usp_Especialidad_Descripcion_Result">
+          <ScalarProperty Name="Cod_Esp" ColumnName="Cod_Esp" />
+          <ScalarProperty Name="Des_Esp" ColumnName="Des_Esp" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_InsertarCursos" FunctionName="DBMatricula2Model.Store.usp_InsertarCursos" />
+    <FunctionImportMapping FunctionImportName="usp_InsertarEstudiantes" FunctionName="DBMatricula2Model.Store.usp_InsertarEstudiantes" />
+    <FunctionImportMapping FunctionImportName="usp_InsertarProfesor" FunctionName="DBMatricula2Model.Store.usp_InsertarProfesor" />
+    <FunctionImportMapping FunctionImportName="usp_ListarCursos" FunctionName="DBMatricula2Model.Store.usp_ListarCursos">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBMatricula2Model.usp_ListarCursos_Result">
+          <ScalarProperty Name="Cod_Cur" ColumnName="Cod_Cur" />
+          <ScalarProperty Name="Des_Cur" ColumnName="Des_Cur" />
+          <ScalarProperty Name="Cred_Cur" ColumnName="Cred_Cur" />
+          <ScalarProperty Name="Usu_Reg" ColumnName="Usu_Reg" />
+          <ScalarProperty Name="Fec_Reg" ColumnName="Fec_Reg" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+          <ScalarProperty Name="Est_Cur" ColumnName="Est_Cur" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_ListarEstudiantes" FunctionName="DBMatricula2Model.Store.usp_ListarEstudiantes">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBMatricula2Model.usp_ListarEstudiantes_Result">
+          <ScalarProperty Name="Cod_Est" ColumnName="Cod_Est" />
+          <ScalarProperty Name="Nom_Est" ColumnName="Nom_Est" />
+          <ScalarProperty Name="Ape_Est" ColumnName="Ape_Est" />
+          <ScalarProperty Name="Tel_Est" ColumnName="Tel_Est" />
+          <ScalarProperty Name="Email_Est" ColumnName="Email_Est" />
+          <ScalarProperty Name="Id_Ubigeo" ColumnName="Id_Ubigeo" />
+          <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="Distrito" ColumnName="Distrito" />
+          <ScalarProperty Name="Foto_Est" ColumnName="Foto_Est" />
+          <ScalarProperty Name="direccion_Est" ColumnName="direccion_Est" />
+          <ScalarProperty Name="Fec_Nac_Est" ColumnName="Fec_Nac_Est" />
+          <ScalarProperty Name="DNI_Pro" ColumnName="DNI_Pro" />
+          <ScalarProperty Name="Usu_Reg" ColumnName="Usu_Reg" />
+          <ScalarProperty Name="Fec_Reg" ColumnName="Fec_Reg" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+          <ScalarProperty Name="Est_Est" ColumnName="Est_Est" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_ListarProfesor" FunctionName="DBMatricula2Model.Store.usp_ListarProfesor">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBMatricula2Model.usp_ListarProfesor_Result">
+          <ScalarProperty Name="Cod_Pro" ColumnName="Cod_Pro" />
+          <ScalarProperty Name="Nom_Pro" ColumnName="Nom_Pro" />
+          <ScalarProperty Name="Ape_Pro" ColumnName="Ape_Pro" />
+          <ScalarProperty Name="Foto_Pro" ColumnName="Foto_Pro" />
+          <ScalarProperty Name="direccion_Pro" ColumnName="direccion_Pro" />
+          <ScalarProperty Name="email_Pro" ColumnName="email_Pro" />
+          <ScalarProperty Name="Fec_Nac_Pro" ColumnName="Fec_Nac_Pro" />
+          <ScalarProperty Name="DNI_Pro" ColumnName="DNI_Pro" />
+          <ScalarProperty Name="Cod_Espec" ColumnName="Cod_Espec" />
+          <ScalarProperty Name="Des_Esp" ColumnName="Des_Esp" />
+          <ScalarProperty Name="Id_Ubigeo" ColumnName="Id_Ubigeo" />
+          <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="Distrito" ColumnName="Distrito" />
+          <ScalarProperty Name="Usu_Reg" ColumnName="Usu_Reg" />
+          <ScalarProperty Name="Fec_Reg" ColumnName="Fec_Reg" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+          <ScalarProperty Name="Est_Pro" ColumnName="Est_Pro" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_Ubigeo_Departamentos" FunctionName="DBMatricula2Model.Store.usp_Ubigeo_Departamentos">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBMatricula2Model.usp_Ubigeo_Departamentos_Result">
+          <ScalarProperty Name="IDDEPA" ColumnName="IDDEPA" />
+          <ScalarProperty Name="DEPARTAMENTO" ColumnName="DEPARTAMENTO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_Ubigeo_DistritosProvinciaDepartamento" FunctionName="DBMatricula2Model.Store.usp_Ubigeo_DistritosProvinciaDepartamento">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBMatricula2Model.usp_Ubigeo_DistritosProvinciaDepartamento_Result">
+          <ScalarProperty Name="IDDIST" ColumnName="IDDIST" />
+          <ScalarProperty Name="DISTRITO" ColumnName="DISTRITO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_Ubigeo_ProvinciasDepartamento" FunctionName="DBMatricula2Model.Store.usp_Ubigeo_ProvinciasDepartamento">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBMatricula2Model.usp_Ubigeo_ProvinciasDepartamento_Result">
+          <ScalarProperty Name="IDPROV" ColumnName="IDPROV" />
+          <ScalarProperty Name="PROVINCIA" ColumnName="PROVINCIA" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_ActualizarSeccion" FunctionName="DBMatricula2Model.Store.usp_ActualizarSeccion" />
+    <FunctionImportMapping FunctionImportName="usp_ConsultarSeccion" FunctionName="DBMatricula2Model.Store.usp_ConsultarSeccion">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBMatricula2Model.usp_ConsultarSeccion_Result">
+          <ScalarProperty Name="Id_Seccion" ColumnName="Id_Seccion" />
+          <ScalarProperty Name="Cod_Cur" ColumnName="Cod_Cur" />
+          <ScalarProperty Name="Cod_Hor" ColumnName="Cod_Hor" />
+          <ScalarProperty Name="Cod_Pro" ColumnName="Cod_Pro" />
+          <ScalarProperty Name="Cod_Sed" ColumnName="Cod_Sed" />
+          <ScalarProperty Name="Modalidad" ColumnName="Modalidad" />
+          <ScalarProperty Name="Num_Aula" ColumnName="Num_Aula" />
+          <ScalarProperty Name="cupo" ColumnName="cupo" />
+          <ScalarProperty Name="Usu_Reg" ColumnName="Usu_Reg" />
+          <ScalarProperty Name="Fec_Reg" ColumnName="Fec_Reg" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+          <ScalarProperty Name="Est_Sec" ColumnName="Est_Sec" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_DocentesxEspecialidad" FunctionName="DBMatricula2Model.Store.usp_DocentesxEspecialidad" />
+    <FunctionImportMapping FunctionImportName="usp_EliminarSeccion" FunctionName="DBMatricula2Model.Store.usp_EliminarSeccion" />
+    <FunctionImportMapping FunctionImportName="usp_InsertarSeccion" FunctionName="DBMatricula2Model.Store.usp_InsertarSeccion" />
+    <FunctionImportMapping FunctionImportName="usp_ListarSeccion" FunctionName="DBMatricula2Model.Store.usp_ListarSeccion">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBMatricula2Model.usp_ListarSeccion_Result">
+          <ScalarProperty Name="Id_Seccion" ColumnName="Id_Seccion" />
+          <ScalarProperty Name="Cod_Cur" ColumnName="Cod_Cur" />
+          <ScalarProperty Name="Cod_Hor" ColumnName="Cod_Hor" />
+          <ScalarProperty Name="Cod_Pro" ColumnName="Cod_Pro" />
+          <ScalarProperty Name="Cod_Sed" ColumnName="Cod_Sed" />
+          <ScalarProperty Name="Modalidad" ColumnName="Modalidad" />
+          <ScalarProperty Name="Num_Aula" ColumnName="Num_Aula" />
+          <ScalarProperty Name="cupo" ColumnName="cupo" />
+          <ScalarProperty Name="Usu_Reg" ColumnName="Usu_Reg" />
+          <ScalarProperty Name="Fec_Reg" ColumnName="Fec_Reg" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+          <ScalarProperty Name="Est_Sec" ColumnName="Est_Sec" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_ObtenerCantidadAlumnosPorPeriodo" FunctionName="DBMatricula2Model.Store.usp_ObtenerCantidadAlumnosPorPeriodo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBMatricula2Model.usp_ObtenerCantidadAlumnosPorPeriodo_Result">
+          <ScalarProperty Name="Periodo" ColumnName="Periodo" />
+          <ScalarProperty Name="CantidadAlumnosMatriculados" ColumnName="CantidadAlumnosMatriculados" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_ObtenerCargaTrabajoProfesor" FunctionName="DBMatricula2Model.Store.usp_ObtenerCargaTrabajoProfesor">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBMatricula2Model.usp_ObtenerCargaTrabajoProfesor_Result">
+          <ScalarProperty Name="Periodo" ColumnName="Periodo" />
+          <ScalarProperty Name="NombreCompletoProfesor" ColumnName="NombreCompletoProfesor" />
+          <ScalarProperty Name="Numero_Secciones" ColumnName="Numero_Secciones" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_ObtenerProfesoresPorCurso" FunctionName="DBMatricula2Model.Store.usp_ObtenerProfesoresPorCurso">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBMatricula2Model.usp_ObtenerProfesoresPorCurso_Result">
+          <ScalarProperty Name="CodigoCurso" ColumnName="CodigoCurso" />
+          <ScalarProperty Name="NombreCurso" ColumnName="NombreCurso" />
+          <ScalarProperty Name="NombreCompletoProfesor" ColumnName="NombreCompletoProfesor" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_ObtenerProfesoresPorEspecialidad" FunctionName="DBMatricula2Model.Store.usp_ObtenerProfesoresPorEspecialidad">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBMatricula2Model.usp_ObtenerProfesoresPorEspecialidad_Result">
+          <ScalarProperty Name="CodigoEspecialidad" ColumnName="CodigoEspecialidad" />
+          <ScalarProperty Name="NombreEspecialidad" ColumnName="NombreEspecialidad" />
+          <ScalarProperty Name="NombreCompletoProfesor" ColumnName="NombreCompletoProfesor" />
+          <ScalarProperty Name="CodigoProfesor" ColumnName="CodigoProfesor" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_ObtenerSeccionesPorCurso" FunctionName="DBMatricula2Model.Store.usp_ObtenerSeccionesPorCurso">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBMatricula2Model.usp_ObtenerSeccionesPorCurso_Result">
+          <ScalarProperty Name="CodigoCurso" ColumnName="CodigoCurso" />
+          <ScalarProperty Name="NombreCurso" ColumnName="NombreCurso" />
+          <ScalarProperty Name="NombreCompletoProfesor" ColumnName="NombreCompletoProfesor" />
+          <ScalarProperty Name="Horario" ColumnName="Horario" />
+          <ScalarProperty Name="Cupos" ColumnName="Cupos" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

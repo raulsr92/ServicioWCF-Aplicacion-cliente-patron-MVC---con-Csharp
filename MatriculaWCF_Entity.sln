@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF_Matriculas", "WCF_Matriculas\WCF_Matriculas.csproj", "{76A3C354-1E29-4ECF-A2E8-9342885079AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC_ClienteMatricula", "MVC_ClienteMatricula\MVC_ClienteMatricula.csproj", "{542306CF-1255-46FD-9C8F-D323E098E041}"
+	ProjectSection(ProjectDependencies) = postProject
+		{76A3C354-1E29-4ECF-A2E8-9342885079AA} = {76A3C354-1E29-4ECF-A2E8-9342885079AA}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76A3C354-1E29-4ECF-A2E8-9342885079AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76A3C354-1E29-4ECF-A2E8-9342885079AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76A3C354-1E29-4ECF-A2E8-9342885079AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76A3C354-1E29-4ECF-A2E8-9342885079AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{542306CF-1255-46FD-9C8F-D323E098E041}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{542306CF-1255-46FD-9C8F-D323E098E041}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{542306CF-1255-46FD-9C8F-D323E098E041}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{542306CF-1255-46FD-9C8F-D323E098E041}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E0C57FF5-AA76-46EE-827A-AA39CC49D8EE}
+	EndGlobalSection
+EndGlobal

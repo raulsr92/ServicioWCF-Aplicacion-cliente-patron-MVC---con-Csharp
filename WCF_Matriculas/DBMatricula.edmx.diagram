@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="38e62d36fb004ae5a4cbc4c9c71faecd" Name="Diagram1">
+        <EntityTypeShape EntityType="DBMatricula2Model.Tb_Cursos" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBMatricula2Model.Tb_Especialidad" Width="1.5" PointX="3.75" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBMatricula2Model.Tb_Estudiantes" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBMatricula2Model.Tb_Horario" Width="1.5" PointX="6" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBMatricula2Model.Tb_Matricula" Width="1.5" PointX="5.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBMatricula2Model.Tb_Periodo" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBMatricula2Model.Tb_Profesores" Width="1.5" PointX="6" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBMatricula2Model.Tb_Seccion" Width="1.5" PointX="8.25" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBMatricula2Model.Tb_Sede" Width="1.5" PointX="3" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBMatricula2Model.Tb_Ubigeo" Width="1.5" PointX="0.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBMatricula2Model.Tb_Usuario" Width="1.5" PointX="7.75" PointY="4.875" IsExpanded="true" />
+        <AssociationConnector Association="DBMatricula2Model.FK_Tb_Seccion_Cod_Cur" ManuallyRouted="false" />
+        <AssociationConnector Association="DBMatricula2Model.FK_Tb_Profesor_Tb_Especialidad" ManuallyRouted="false" />
+        <AssociationConnector Association="DBMatricula2Model.FK_Tb_Estudiantes_Ubigeo" ManuallyRouted="false" />
+        <AssociationConnector Association="DBMatricula2Model.FK_Tb_Matricula_Cod_Est" ManuallyRouted="false" />
+        <AssociationConnector Association="DBMatricula2Model.FK_Tb_Seccion_Cod_Hor" ManuallyRouted="false" />
+        <AssociationConnector Association="DBMatricula2Model.FK_Tb_Matricula_Cod_Per" ManuallyRouted="false" />
+        <AssociationConnector Association="DBMatricula2Model.FK_Tb_Profesor_Tb_Ubigeo" ManuallyRouted="false" />
+        <AssociationConnector Association="DBMatricula2Model.FK_Tb_Seccion_Cod_Pro" ManuallyRouted="false" />
+        <AssociationConnector Association="DBMatricula2Model.FK_Tb_Seccion_Cod_Sed" ManuallyRouted="false" />
+        <AssociationConnector Association="DBMatricula2Model.FK__Tb_Sede__Id_Ubig__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="DBMatricula2Model.Tb_Detalle_Matricula" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

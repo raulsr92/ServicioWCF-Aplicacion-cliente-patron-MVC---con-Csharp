@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WCF_Matriculas" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WCF_Matriculas" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfDCEspecialidad">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DCEspecialidad" nillable="true" type="tns:DCEspecialidad" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDCEspecialidad" nillable="true" type="tns:ArrayOfDCEspecialidad" />
+  <xs:complexType name="DCEspecialidad">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cantProfesores" type="xs:int" />
+      <xs:element minOccurs="0" name="codEsp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="desEsp" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DCEspecialidad" nillable="true" type="tns:DCEspecialidad" />
+</xs:schema>

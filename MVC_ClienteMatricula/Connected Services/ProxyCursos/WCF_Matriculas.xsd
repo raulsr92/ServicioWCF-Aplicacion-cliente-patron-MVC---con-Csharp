@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WCF_Matriculas" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WCF_Matriculas" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="CursoDC">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cod_Cur" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cred_Cur" type="xs:short" />
+      <xs:element minOccurs="0" name="Des_Cur" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Est_Curso" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fec_Reg" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Fec_Ult_Mod" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Usu_Reg" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Usu_Ult_Mod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cantProfesores" type="xs:int" />
+      <xs:element minOccurs="0" name="cantSecciones" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CursoDC" nillable="true" type="tns:CursoDC" />
+  <xs:complexType name="ArrayOfCursoDC">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CursoDC" nillable="true" type="tns:CursoDC" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCursoDC" nillable="true" type="tns:ArrayOfCursoDC" />
+</xs:schema>

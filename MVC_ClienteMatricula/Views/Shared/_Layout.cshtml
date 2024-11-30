@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="~/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/styles2.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>@ViewBag.Title - UNINTEC</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm " style="background-color: #6439ff ">
+        <div class="container">
+            <div class="marketing-container">
+                <img class="logo-main" src="~/Imagenes/LogoUni-redondo.png" />
+                @Html.ActionLink("UNINTEC", "Index", "Home", new { area = "" }, new { @class = "navbar-brand", style = "color: white;" })
+            </div>
+
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li>@Html.ActionLink("Inicio", "Index", "Home", new { area = "" }, new { @class = "nav-link", style = "color: white;" })</li>
+                    @*<li >@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav-link" ,style = "color: white;" })</li>*@
+                    @*<li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link", style = "color: white;" })</li>*@
+                    <li>@Html.ActionLink("Especialidades", "Index", "Especialidad", new { area = "" }, new { @class = "nav-link", style = "color: white;" })</li>
+
+                    <li>@Html.ActionLink("Cursos", "Index", "Curso", new { area = "" }, new { @class = "nav-link", style = "color: white;" })</li>
+
+                    <li>@Html.ActionLink("Consultas Profesores", "Index", "Profesor", new { area = "" }, new { @class = "nav-link", style = "color: white;" })</li>
+                    <li>@Html.ActionLink("Consultas Secciones", "Index", "Seccion", new { area = "" }, new { @class = "nav-link", style = "color: white;" })</li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+
+    </div>
+    <footer class="footer-container">
+        <section class="container">
+            <div class="row links-container" style="width:100%">
+                <div class="col-3 text--subcontainer">
+                    <h5 class="tittle--footer">Campus</h5>
+                    <div class="text--footer--contenedor">
+                        <p class="text--footer">Campus San Isidro: Av. Salaverry 2625</p>
+                        <p class="text--footer">Campus La Molina: Av. La Fontana 955</p>
+                        <p class="text--footer">Campus Miraflores: Av. Benavides 778</p>
+                    </div>
+                </div>
+                <div class="col-3 text--subcontainer">
+                    <h5 class="tittle--footer">Enlaces Externos</h5>
+                    <div class="text--footer--contenedor">
+                        <p class="text--footer">UNINTEC NET</p>
+                        <p class="text--footer">Empleabilidad</p>
+                        <p class="text--footer">Carreras Técnicas</p>
+                        <p class="text--footer">Escuela de Negocios</p>
+                        <p class="text--footer">Cursos Especializados</p>
+                        <p class="text--footer">Diplomados</p>
+                        <p class="text--footer">Blog</p>
+                        <p class="text--footer">Test vocacional</p>
+                        <p class="text--footer">Portal de Transparencia</p>
+
+
+                    </div>
+                </div>
+                <div class="col-3 post--venta--container">
+                    <div class="correo--container">
+                        <i class="bi bi-envelope-fill text--footer icon-footer"></i>
+                        <p class="text--footer"> admision@unintec.pe</p>
+                    </div>
+                    <div class="telef--container">
+                        <i class="bi bi-telephone-fill text--footer icon-footer"></i>
+                        <p class="text--footer">  01 706 0000</p>
+                    </div>
+
+                    <div class="book--container">
+                        <i class="bi bi-book text--footer icon-footer"></i>
+                        <p class="text--footer"> Libro de Reclamaciones</p>
+                    </div>
+
+                </div>
+                <div class="col-3 text--subcontainer">
+                    <h5 class="tittle--footer">Redes Sociales</h5>
+                    <div class="social-media-container">
+                        <div>
+                            <a>
+                                <i class="bi bi-facebook icon-footer-socialmedia"></i>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a>
+                                <i class="bi bi-twitter-x icon-footer-socialmedia"></i>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a>
+                                <i class="bi bi-youtube icon-footer-socialmedia"></i>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a>
+                                <i class="bi bi-instagram icon-footer-socialmedia"></i>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a>
+                                <i class="bi bi-tiktok icon-footer-socialmedia"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="container">
+            <p class="text-center tittle--footer">&copy; @DateTime.Now.Year - Universidad de Innovación y Tecnología </p>
+        </section>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

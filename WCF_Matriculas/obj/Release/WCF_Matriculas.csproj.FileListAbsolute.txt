@@ -1,0 +1,12 @@
+C:\DA2Prueba\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Release\WCF_Matriculas.dll.config
+C:\DA2Prueba\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Release\WCF_Matriculas.dll
+C:\DA2Prueba\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Release\WCF_Matriculas.pdb
+C:\DA2Prueba\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Release\EntityFramework.dll
+C:\DA2Prueba\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Release\EntityFramework.SqlServer.dll
+C:\DA2Prueba\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Release\EntityFramework.xml
+C:\DA2Prueba\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Release\EntityFramework.SqlServer.xml
+C:\DA2Prueba\1522_MatriculaWCF_Entiry\WCF_Matriculas\obj\Release\WCF_Matriculas.csproj.AssemblyReference.cache
+C:\DA2Prueba\1522_MatriculaWCF_Entiry\WCF_Matriculas\obj\Release\WCF_Matriculas.csproj.CoreCompileInputs.cache
+C:\DA2Prueba\1522_MatriculaWCF_Entiry\WCF_Matriculas\obj\Release\WCF_Matr.4CC8C8E3.Up2Date
+C:\DA2Prueba\1522_MatriculaWCF_Entiry\WCF_Matriculas\obj\Release\WCF_Matriculas.dll
+C:\DA2Prueba\1522_MatriculaWCF_Entiry\WCF_Matriculas\obj\Release\WCF_Matriculas.pdb

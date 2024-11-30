@@ -1,0 +1,161 @@
+﻿
+/* ==================================================  Fuente*/
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+/* ==================================================  Footer*/
+.footer-container {
+    display: flex !important;
+    flex-direction: column;
+    row-gap: 50px;
+    width: 100%;
+    height: auto;
+    padding: 70px 30px 20px 30px !important;
+    background-color: #7CF5FF !important;
+}
+.correo--container, .telef--container {
+    display: flex !important;
+    column-gap: 10px;
+    align-items: center
+}
+
+.text--footer {
+    font-size: 14px !important;
+}
+
+.book--container{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    width: 60%
+}
+
+.text--subcontainer {
+    padding-left: 25px !important;
+}
+
+.icon-footer{
+    font-size:30px!important;
+}
+
+/*==================================================  Footer icons */
+
+.icon-footer-socialmedia {
+    font-size: 25px !important;
+    color: #6439ff;
+}
+
+.social-media-container {
+    display: flex !important;
+    column-gap: 25px;
+}
+
+.social-media-container > div{
+    background-color:white;
+    padding:6px 10px;
+    border-radius:50%;
+    cursor: pointer;
+}
+
+.social-media-container > div:hover {
+    background-color: rgba(0, 0, 0,0.1);
+        
+}
+
+/* ================================================== Estilos páginas con tablas */
+.main-title, h3 {
+    color: #6439ff !important;
+}
+
+.body-content{
+    display: grid;
+    row-gap: 20px;
+}
+
+tr, th {
+    color: #4F75FF!important;
+    font-weight:500!important;
+}
+
+.head--table {
+    color: #6439ff !important;
+    font-weight: 700 !important;
+    background-color: #CCFBFF !important;
+    padding: 8px 6px 8px 6px;
+}
+
+.content-table-text{
+    font-size:14.5px;
+    padding:5px 6px 5px 6px;
+}
+.data-table {
+    border-color: #6439ff;
+}
+
+.filter-table, .filter-table-row, .filter-table-cell, .filter-header {
+    border: 0 !important;
+    border-width: 0 !important;
+}
+.filter-table {
+    border: 2px solid #00CCDD !important;
+}
+
+.filter-header {
+    border-color: #7CF5FF !important;
+    background-color: #7CF5FF!important;
+}
+
+.filter-table-row{
+    margin-top: 20px;
+}
+
+.row-main {
+    border-color: #00CCDD !important;
+    border-width: 2px !important;
+}
+
+.radio-button-content{
+    padding-left: 15px !important
+}
+
+.filter-button {
+    background-color: #6439ff !important;
+    padding: 3px 20px;
+    border-radius: 8px;
+    border: 0 !important;
+    color: white;
+    font-weight: 400 !important;
+}
+
+/* ================================================== Radio buttons */
+
+input[type="radio"] {
+    accent-color: #6439ff !important;
+}
+
+/* ================================================== Select elements */
+
+
+.select-element-filter:focus, .select-element-filter:active, .select-element-filter:visited{
+    border: 2px solid #6439ff !important;
+}
+
+
+/* ================================================== Página de Bienvenida */
+
+
+h1 {
+
+    color: #6439ff !important;
+}
+
+.body-content-home {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: grid!important;
+    row-gap: 20px!important;
+}

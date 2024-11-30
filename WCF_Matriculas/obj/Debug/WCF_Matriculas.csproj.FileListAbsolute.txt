@@ -1,0 +1,48 @@
+D:\archivos\ISIL\Ciclo2-2024\1522 - Desarrollo de Aplicaciones II\Avance2 - Parcial\MatriculaWCF_Entity\1522_MatriculaWCF_Entiry\WCF_Matriculas\obj\Debug\WCF_Matriculas.csproj.AssemblyReference.cache
+D:\archivos\ISIL\Ciclo2-2024\1522 - Desarrollo de Aplicaciones II\Avance2 - Parcial\MatriculaWCF_Entity\1522_MatriculaWCF_Entiry\WCF_Matriculas\obj\Debug\WCF_Matriculas.csproj.CoreCompileInputs.cache
+D:\archivos\ISIL\Ciclo2-2024\1522 - Desarrollo de Aplicaciones II\Avance2 - Parcial\MatriculaWCF_Entity\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Debug\WCF_Matriculas.dll.config
+D:\archivos\ISIL\Ciclo2-2024\1522 - Desarrollo de Aplicaciones II\Avance2 - Parcial\MatriculaWCF_Entity\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Debug\WCF_Matriculas.dll
+D:\archivos\ISIL\Ciclo2-2024\1522 - Desarrollo de Aplicaciones II\Avance2 - Parcial\MatriculaWCF_Entity\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Debug\WCF_Matriculas.pdb
+D:\archivos\ISIL\Ciclo2-2024\1522 - Desarrollo de Aplicaciones II\Avance2 - Parcial\MatriculaWCF_Entity\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Debug\EntityFramework.dll
+D:\archivos\ISIL\Ciclo2-2024\1522 - Desarrollo de Aplicaciones II\Avance2 - Parcial\MatriculaWCF_Entity\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Debug\EntityFramework.SqlServer.dll
+D:\archivos\ISIL\Ciclo2-2024\1522 - Desarrollo de Aplicaciones II\Avance2 - Parcial\MatriculaWCF_Entity\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Debug\EntityFramework.xml
+D:\archivos\ISIL\Ciclo2-2024\1522 - Desarrollo de Aplicaciones II\Avance2 - Parcial\MatriculaWCF_Entity\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Debug\EntityFramework.SqlServer.xml
+D:\archivos\ISIL\Ciclo2-2024\1522 - Desarrollo de Aplicaciones II\Avance2 - Parcial\MatriculaWCF_Entity\1522_MatriculaWCF_Entiry\WCF_Matriculas\obj\Debug\WCF_Matriculas.csproj.CopyComplete
+D:\archivos\ISIL\Ciclo2-2024\1522 - Desarrollo de Aplicaciones II\Avance2 - Parcial\MatriculaWCF_Entity\1522_MatriculaWCF_Entiry\WCF_Matriculas\obj\Debug\WCF_Matriculas.dll
+D:\archivos\ISIL\Ciclo2-2024\1522 - Desarrollo de Aplicaciones II\Avance2 - Parcial\MatriculaWCF_Entity\1522_MatriculaWCF_Entiry\WCF_Matriculas\obj\Debug\WCF_Matriculas.pdb
+D:\DA2 - ISIL\Proyecto Grupal\Parcial\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Debug\WCF_Matriculas.dll.config
+D:\DA2 - ISIL\Proyecto Grupal\Parcial\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Debug\WCF_Matriculas.dll
+D:\DA2 - ISIL\Proyecto Grupal\Parcial\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Debug\WCF_Matriculas.pdb
+D:\DA2 - ISIL\Proyecto Grupal\Parcial\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Debug\EntityFramework.dll
+D:\DA2 - ISIL\Proyecto Grupal\Parcial\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Debug\EntityFramework.SqlServer.dll
+D:\DA2 - ISIL\Proyecto Grupal\Parcial\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Debug\EntityFramework.xml
+D:\DA2 - ISIL\Proyecto Grupal\Parcial\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Debug\EntityFramework.SqlServer.xml
+D:\DA2 - ISIL\Proyecto Grupal\Parcial\1522_MatriculaWCF_Entiry\WCF_Matriculas\obj\Debug\WCF_Matriculas.csproj.AssemblyReference.cache
+D:\DA2 - ISIL\Proyecto Grupal\Parcial\1522_MatriculaWCF_Entiry\WCF_Matriculas\obj\Debug\WCF_Matriculas.csproj.CoreCompileInputs.cache
+D:\DA2 - ISIL\Proyecto Grupal\Parcial\1522_MatriculaWCF_Entiry\WCF_Matriculas\obj\Debug\WCF_Matr.4CC8C8E3.Up2Date
+D:\DA2 - ISIL\Proyecto Grupal\Parcial\1522_MatriculaWCF_Entiry\WCF_Matriculas\obj\Debug\WCF_Matriculas.dll
+D:\DA2 - ISIL\Proyecto Grupal\Parcial\1522_MatriculaWCF_Entiry\WCF_Matriculas\obj\Debug\WCF_Matriculas.pdb
+C:\Users\USER\Documents\Desarrollo de Aplicaciones\AVANZADO\Parcial\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Debug\WCF_Matriculas.dll.config
+C:\Users\USER\Documents\Desarrollo de Aplicaciones\AVANZADO\Parcial\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Debug\WCF_Matriculas.dll
+C:\Users\USER\Documents\Desarrollo de Aplicaciones\AVANZADO\Parcial\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Debug\WCF_Matriculas.pdb
+C:\Users\USER\Documents\Desarrollo de Aplicaciones\AVANZADO\Parcial\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Debug\EntityFramework.dll
+C:\Users\USER\Documents\Desarrollo de Aplicaciones\AVANZADO\Parcial\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\USER\Documents\Desarrollo de Aplicaciones\AVANZADO\Parcial\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Debug\EntityFramework.xml
+C:\Users\USER\Documents\Desarrollo de Aplicaciones\AVANZADO\Parcial\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\USER\Documents\Desarrollo de Aplicaciones\AVANZADO\Parcial\1522_MatriculaWCF_Entiry\WCF_Matriculas\obj\Debug\WCF_Matriculas.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\Desarrollo de Aplicaciones\AVANZADO\Parcial\1522_MatriculaWCF_Entiry\WCF_Matriculas\obj\Debug\WCF_Matriculas.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\Desarrollo de Aplicaciones\AVANZADO\Parcial\1522_MatriculaWCF_Entiry\WCF_Matriculas\obj\Debug\WCF_Matr.4CC8C8E3.Up2Date
+C:\Users\USER\Documents\Desarrollo de Aplicaciones\AVANZADO\Parcial\1522_MatriculaWCF_Entiry\WCF_Matriculas\obj\Debug\WCF_Matriculas.dll
+C:\Users\USER\Documents\Desarrollo de Aplicaciones\AVANZADO\Parcial\1522_MatriculaWCF_Entiry\WCF_Matriculas\obj\Debug\WCF_Matriculas.pdb
+C:\DA2Prueba\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Debug\WCF_Matriculas.dll.config
+C:\DA2Prueba\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Debug\WCF_Matriculas.dll
+C:\DA2Prueba\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Debug\WCF_Matriculas.pdb
+C:\DA2Prueba\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Debug\EntityFramework.dll
+C:\DA2Prueba\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Debug\EntityFramework.SqlServer.dll
+C:\DA2Prueba\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Debug\EntityFramework.xml
+C:\DA2Prueba\1522_MatriculaWCF_Entiry\WCF_Matriculas\bin\Debug\EntityFramework.SqlServer.xml
+C:\DA2Prueba\1522_MatriculaWCF_Entiry\WCF_Matriculas\obj\Debug\WCF_Matriculas.csproj.AssemblyReference.cache
+C:\DA2Prueba\1522_MatriculaWCF_Entiry\WCF_Matriculas\obj\Debug\WCF_Matriculas.csproj.CoreCompileInputs.cache
+C:\DA2Prueba\1522_MatriculaWCF_Entiry\WCF_Matriculas\obj\Debug\WCF_Matr.4CC8C8E3.Up2Date
+C:\DA2Prueba\1522_MatriculaWCF_Entiry\WCF_Matriculas\obj\Debug\WCF_Matriculas.dll
+C:\DA2Prueba\1522_MatriculaWCF_Entiry\WCF_Matriculas\obj\Debug\WCF_Matriculas.pdb

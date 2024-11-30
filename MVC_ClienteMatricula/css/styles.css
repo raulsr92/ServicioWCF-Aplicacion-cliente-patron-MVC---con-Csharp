@@ -1,0 +1,48 @@
+﻿
+body {
+    margin:0!important;
+    padding:0!important;
+}
+
+.logo-main{
+    width: 100px;
+}
+
+.marketing-container{
+    display: flex;
+    align-items:center;
+    column-gap: 10px;
+    font-weight:bold;
+}
+
+
+.tittle--footer {
+    color: #6439ff;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.text--footer {
+    margin-bottom:0;
+    color: #6439ff;  
+}
+
+.text--footer--contenedor{
+    display: grid;
+}
+
+.text--subcontainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.links-container{
+    display:flex!important;
+}
+
+.post--venta--container{
+    padding-top:30px;
+}
+
+

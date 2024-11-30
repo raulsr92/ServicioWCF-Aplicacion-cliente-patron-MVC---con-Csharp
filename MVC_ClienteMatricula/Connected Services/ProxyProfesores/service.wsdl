@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="ServicioProfesores" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/WCF_Matriculas" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServicioProfesores_ActualizarProfesor_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarProfesor" />
+  </wsdl:message>
+  <wsdl:message name="IServicioProfesores_ActualizarProfesor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarProfesorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioProfesores_ConsultarProfesor_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarProfesor" />
+  </wsdl:message>
+  <wsdl:message name="IServicioProfesores_ConsultarProfesor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarProfesorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioProfesores_EliminarProfesor_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarProfesor" />
+  </wsdl:message>
+  <wsdl:message name="IServicioProfesores_EliminarProfesor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarProfesorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioProfesores_InsertarProfesor_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarProfesor" />
+  </wsdl:message>
+  <wsdl:message name="IServicioProfesores_InsertarProfesor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarProfesorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioProfesores_ListarProfesor_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarProfesor" />
+  </wsdl:message>
+  <wsdl:message name="IServicioProfesores_ListarProfesor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarProfesorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioProfesores_ListarProfesor2_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarProfesor2" />
+  </wsdl:message>
+  <wsdl:message name="IServicioProfesores_ListarProfesor2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarProfesor2Response" />
+  </wsdl:message>
+  <wsdl:message name="IServicioProfesores_ListarProfesorEspecialidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarProfesorEspecialidad" />
+  </wsdl:message>
+  <wsdl:message name="IServicioProfesores_ListarProfesorEspecialidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarProfesorEspecialidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioProfesores_ListarProfesorCurso_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarProfesorCurso" />
+  </wsdl:message>
+  <wsdl:message name="IServicioProfesores_ListarProfesorCurso_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarProfesorCursoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioProfesores_ObtenerCargaTrabajoProfesor_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerCargaTrabajoProfesor" />
+  </wsdl:message>
+  <wsdl:message name="IServicioProfesores_ObtenerCargaTrabajoProfesor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerCargaTrabajoProfesorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioProfesores_ObtenerProfesoresPorCurso_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerProfesoresPorCurso" />
+  </wsdl:message>
+  <wsdl:message name="IServicioProfesores_ObtenerProfesoresPorCurso_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerProfesoresPorCursoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioProfesores_ObtenerProfesoresPorEspecialidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerProfesoresPorEspecialidad" />
+  </wsdl:message>
+  <wsdl:message name="IServicioProfesores_ObtenerProfesoresPorEspecialidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerProfesoresPorEspecialidadResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServicioProfesores">
+    <wsdl:operation name="ActualizarProfesor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioProfesores/ActualizarProfesor" message="tns:IServicioProfesores_ActualizarProfesor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioProfesores/ActualizarProfesorResponse" message="tns:IServicioProfesores_ActualizarProfesor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarProfesor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioProfesores/ConsultarProfesor" message="tns:IServicioProfesores_ConsultarProfesor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioProfesores/ConsultarProfesorResponse" message="tns:IServicioProfesores_ConsultarProfesor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarProfesor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioProfesores/EliminarProfesor" message="tns:IServicioProfesores_EliminarProfesor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioProfesores/EliminarProfesorResponse" message="tns:IServicioProfesores_EliminarProfesor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarProfesor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioProfesores/InsertarProfesor" message="tns:IServicioProfesores_InsertarProfesor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioProfesores/InsertarProfesorResponse" message="tns:IServicioProfesores_InsertarProfesor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarProfesor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioProfesores/ListarProfesor" message="tns:IServicioProfesores_ListarProfesor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioProfesores/ListarProfesorResponse" message="tns:IServicioProfesores_ListarProfesor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarProfesor2">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioProfesores/ListarProfesor2" message="tns:IServicioProfesores_ListarProfesor2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioProfesores/ListarProfesor2Response" message="tns:IServicioProfesores_ListarProfesor2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarProfesorEspecialidad">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioProfesores/ListarProfesorEspecialidad" message="tns:IServicioProfesores_ListarProfesorEspecialidad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioProfesores/ListarProfesorEspecialidadResponse" message="tns:IServicioProfesores_ListarProfesorEspecialidad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarProfesorCurso">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioProfesores/ListarProfesorCurso" message="tns:IServicioProfesores_ListarProfesorCurso_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioProfesores/ListarProfesorCursoResponse" message="tns:IServicioProfesores_ListarProfesorCurso_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCargaTrabajoProfesor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioProfesores/ObtenerCargaTrabajoProfesor" message="tns:IServicioProfesores_ObtenerCargaTrabajoProfesor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioProfesores/ObtenerCargaTrabajoProfesorResponse" message="tns:IServicioProfesores_ObtenerCargaTrabajoProfesor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerProfesoresPorCurso">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioProfesores/ObtenerProfesoresPorCurso" message="tns:IServicioProfesores_ObtenerProfesoresPorCurso_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioProfesores/ObtenerProfesoresPorCursoResponse" message="tns:IServicioProfesores_ObtenerProfesoresPorCurso_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerProfesoresPorEspecialidad">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioProfesores/ObtenerProfesoresPorEspecialidad" message="tns:IServicioProfesores_ObtenerProfesoresPorEspecialidad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioProfesores/ObtenerProfesoresPorEspecialidadResponse" message="tns:IServicioProfesores_ObtenerProfesoresPorEspecialidad_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServicioProfesores" type="tns:IServicioProfesores">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ActualizarProfesor">
+      <soap:operation soapAction="http://tempuri.org/IServicioProfesores/ActualizarProfesor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarProfesor">
+      <soap:operation soapAction="http://tempuri.org/IServicioProfesores/ConsultarProfesor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarProfesor">
+      <soap:operation soapAction="http://tempuri.org/IServicioProfesores/EliminarProfesor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarProfesor">
+      <soap:operation soapAction="http://tempuri.org/IServicioProfesores/InsertarProfesor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarProfesor">
+      <soap:operation soapAction="http://tempuri.org/IServicioProfesores/ListarProfesor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarProfesor2">
+      <soap:operation soapAction="http://tempuri.org/IServicioProfesores/ListarProfesor2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarProfesorEspecialidad">
+      <soap:operation soapAction="http://tempuri.org/IServicioProfesores/ListarProfesorEspecialidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarProfesorCurso">
+      <soap:operation soapAction="http://tempuri.org/IServicioProfesores/ListarProfesorCurso" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCargaTrabajoProfesor">
+      <soap:operation soapAction="http://tempuri.org/IServicioProfesores/ObtenerCargaTrabajoProfesor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerProfesoresPorCurso">
+      <soap:operation soapAction="http://tempuri.org/IServicioProfesores/ObtenerProfesoresPorCurso" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerProfesoresPorEspecialidad">
+      <soap:operation soapAction="http://tempuri.org/IServicioProfesores/ObtenerProfesoresPorEspecialidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicioProfesores">
+    <wsdl:port name="BasicHttpBinding_IServicioProfesores" binding="tns:BasicHttpBinding_IServicioProfesores">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/WCF_Matriculas/ServicioProfesores/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
