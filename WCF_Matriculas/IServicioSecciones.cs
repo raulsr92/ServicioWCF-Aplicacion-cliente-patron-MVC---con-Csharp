@@ -34,6 +34,9 @@ namespace WCF_Matriculas
         [OperationContract]
         List<SeccionDC> ListarSeccionProfesor(string strCodProfesor);
 
+        [OperationContract]
+        List<SeccionDC> ListarSeccionSede(string strCodSede);
+
         //--------------------
 
 

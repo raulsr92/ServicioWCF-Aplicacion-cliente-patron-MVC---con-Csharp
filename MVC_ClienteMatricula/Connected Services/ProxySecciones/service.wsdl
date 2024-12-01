@@ -55,6 +55,12 @@
   <wsdl:message name="IServicioSecciones_ListarSeccionProfesor_OutputMessage">
     <wsdl:part name="parameters" element="tns:ListarSeccionProfesorResponse" />
   </wsdl:message>
+  <wsdl:message name="IServicioSecciones_ListarSeccionSede_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarSeccionSede" />
+  </wsdl:message>
+  <wsdl:message name="IServicioSecciones_ListarSeccionSede_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarSeccionSedeResponse" />
+  </wsdl:message>
   <wsdl:message name="IServicioSecciones_ObtenerSeccionesPorCurso_InputMessage">
     <wsdl:part name="parameters" element="tns:ObtenerSeccionesPorCurso" />
   </wsdl:message>
@@ -93,6 +99,10 @@
     <wsdl:operation name="ListarSeccionProfesor">
       <wsdl:input wsaw:Action="http://tempuri.org/IServicioSecciones/ListarSeccionProfesor" message="tns:IServicioSecciones_ListarSeccionProfesor_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServicioSecciones/ListarSeccionProfesorResponse" message="tns:IServicioSecciones_ListarSeccionProfesor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarSeccionSede">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioSecciones/ListarSeccionSede" message="tns:IServicioSecciones_ListarSeccionSede_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioSecciones/ListarSeccionSedeResponse" message="tns:IServicioSecciones_ListarSeccionSede_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="ObtenerSeccionesPorCurso">
       <wsdl:input wsaw:Action="http://tempuri.org/IServicioSecciones/ObtenerSeccionesPorCurso" message="tns:IServicioSecciones_ObtenerSeccionesPorCurso_InputMessage" />
@@ -166,6 +176,15 @@
     </wsdl:operation>
     <wsdl:operation name="ListarSeccionProfesor">
       <soap:operation soapAction="http://tempuri.org/IServicioSecciones/ListarSeccionProfesor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarSeccionSede">
+      <soap:operation soapAction="http://tempuri.org/IServicioSecciones/ListarSeccionSede" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

@@ -9,6 +9,7 @@ using System.Web.Mvc;
 using MVC_ClienteMatricula.ProxySecciones;
 using MVC_ClienteMatricula.ProxyCursos;
 using MVC_ClienteMatricula.ProxyProfesores;
+using MVC_ClienteMatricula.ProxySedes;
 
 namespace MVC_ClienteMatricula.Controllers
 {
@@ -21,6 +22,7 @@ namespace MVC_ClienteMatricula.Controllers
         
         ServicioProfesoresClient miServProfesores = new ServicioProfesoresClient();
 
+        ServicioSedesClient miServSedes = new ServicioSedesClient();    
 
 
         // 3° Métodos para llenar los COMBO BOX 
@@ -68,6 +70,27 @@ namespace MVC_ClienteMatricula.Controllers
         }
 
 
+        // Método para devolver la colección de Sedes (para Combo Box)
+
+        public List<SelectListItem> ObtenerSedes(String strSede)
+
+        {
+            List<SelectListItem> items = new SelectList(miServSedes.ListarSedeConsulta(), "Cod_Sed", "Desc_Sed").ToList();
+
+            // Insertar en la posicion 0, el item con texto: Seleccione Marca y valor 0
+
+            items.Insert(0, (new SelectListItem { Text = "Seleccione Sede", Value = "0" }));
+
+            SelectListItem itemSel = new SelectListItem();
+
+            itemSel = items.Where(x => x.Value == strSede).FirstOrDefault();
+
+            itemSel.Selected = true;
+
+            return items;
+
+        }
+
         // 4° Action Result INDEX
 
         public ActionResult Index()
@@ -82,8 +105,11 @@ namespace MVC_ClienteMatricula.Controllers
 
             ViewBag.ListarProfesores = ObtenerProfesores("0");
 
+            ViewBag.ListarSedes = ObtenerSedes("0");    
+
             return View();
         }
+
 
         // 5° Action Result para BÚSQUEDA
 
@@ -95,6 +121,8 @@ namespace MVC_ClienteMatricula.Controllers
 
             String strcriterioProfesor = fc["cboProfesores"];
 
+            String strcriterioSede = fc["cboSedes"];
+
             String strCondicion = fc["condicion"];
 
             // 5.2 Si se elige el criterio de búsqueda "Por cursos", devuelve las secciones del curso seleccionado
@@ -102,8 +130,10 @@ namespace MVC_ClienteMatricula.Controllers
             if (strCondicion.Equals("PorCurso"))
             {
                 ViewBag.ListarSecciones = miServSecciones.ListarSeccionCurso(strcriterioCurso);
+
                 ViewBag.ListarCursos = ObtenerCursos(strcriterioCurso);
                 ViewBag.ListarProfesores = ObtenerProfesores("0");
+                ViewBag.ListarSedes = ObtenerSedes("0");
 
                 ViewBag.Cantidad = miServSecciones.ListarSeccionCurso(strcriterioCurso).Count();
             }             
@@ -114,19 +144,38 @@ namespace MVC_ClienteMatricula.Controllers
             else if (strCondicion.Equals("PorProfesor"))
             {
                 ViewBag.ListarSecciones = miServSecciones.ListarSeccionProfesor(strcriterioProfesor);
+
                 ViewBag.ListarCursos = ObtenerCursos("0");
                 ViewBag.ListarProfesores = ObtenerProfesores(strcriterioProfesor);
+                ViewBag.ListarSedes = ObtenerSedes("0");
 
                 ViewBag.Cantidad = miServSecciones.ListarSeccionProfesor(strcriterioProfesor).Count();
 
             }
-            // 5.4 Si no se elige criterio de búsqueda , devuelve todas las secciones disponibles
+
+            // 5.4 Si se elige el criterio de búsqueda "Por Sedes", devuelve las secciones de la sede seleccionada
+
+            else if (strCondicion.Equals("PorSede"))
+            {
+                ViewBag.ListarSecciones = miServSecciones.ListarSeccionSede(strcriterioSede);
+
+                ViewBag.ListarCursos = ObtenerCursos("0");
+                ViewBag.ListarProfesores = ObtenerProfesores("0");
+                ViewBag.ListarSedes = ObtenerSedes(strcriterioSede);
+
+                ViewBag.Cantidad = miServSecciones.ListarSeccionSede(strcriterioSede).Count();
+            }
+
+            // 5.5 Si no se elige criterio de búsqueda , devuelve todas las secciones disponibles
 
             else
             {
                 ViewBag.ListarSecciones = miServSecciones.ListarSeccion2();
+
                 ViewBag.ListarCursos = ObtenerCursos("0");
                 ViewBag.ListarProfesores = ObtenerProfesores("0");
+                ViewBag.ListarSedes = ObtenerSedes("0");
+
                 ViewBag.Cantidad = miServSecciones.ListarSeccion2().Count();
             }
 

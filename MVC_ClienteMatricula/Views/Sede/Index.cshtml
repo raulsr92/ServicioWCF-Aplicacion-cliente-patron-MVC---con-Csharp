@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+    <style>
+        .fila-colorida {
+            background-color: lightblue;
+            font: bold;
+        }
+
+        .centrar-fila th {
+            text-align: center;
+        }
+    </style>
+    <main class="body-content">
+        <h3 class="main-title" style="color: #6439ff">LISTADO DE SEDES</h3>
+        <table class="table">
+            <tr class="fila-colorida centrar-fila table-info">
+                <th class="head--table">Codigo</th>
+                <th class="head--table">Nombre de la Sede</th>
+                <th class="head--table">Ubicación</th>
+                <th class="head--table">Cantidad de Secciones por sede</th>
+
+            </tr>
+            @* Se obtiene el listado de marcas desde el viewBag ListarMarcas*@
+            @foreach (var marca in ViewBag.ListarSedes)
+            {
+                <tr>
+                    <th style="text-align: center;">@marca.Cod_Sed</th>
+                    <th style="text-align: center;">@marca.Desc_Sed</th>
+                    <th style="text-align: center;">@marca.Ubicación</th>
+                    <th style="text-align: center;">@marca.cantSecciones</th>
+
+                </tr>
+            }
+        </table>
+
+    </main>
+
+</body>
+</html>
+

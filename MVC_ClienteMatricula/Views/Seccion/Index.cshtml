@@ -55,6 +55,21 @@
                     </td>
                 </tr>
 
+                <tr class="filter-table-row" style="height:5px">
+
+                <!-- Radio button para búsqueda por sede-->
+
+                <tr class="filter-table-row">
+                    <td class="filter-table-cell radio-button-content">
+                        <input type="radio" name="condicion" value="PorSede" />
+                        <span>Por Sede</span>
+                    </td>
+                    <td class="filter-table-cell">
+                        @Html.DropDownList("cboSedes",
+                       (IEnumerable<SelectListItem>)ViewBag.ListarSedes, new { @class = "select-element-filter", style = "width: 300px ; height: 30px; border: 2px solid #6439ff; border-radius:8px; color: #6439ff; padding-left:10px;", })
+                    </td>
+                </tr>
+
                 <tr class="filter-table-row" style="height:10px">
                 </tr>
                 <tr class="filter-table-row">

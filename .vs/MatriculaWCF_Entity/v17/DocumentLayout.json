@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\DA2Prueba\\1522_MatriculaWCF_Entiry\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{542306CF-1255-46FD-9C8F-D323E098E041}|MVC_ClienteMatricula\\MVC_ClienteMatricula.csproj|c:\\da2prueba\\1522_matriculawcf_entiry\\mvc_clientematricula\\views\\seccion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{542306CF-1255-46FD-9C8F-D323E098E041}|MVC_ClienteMatricula\\MVC_ClienteMatricula.csproj|solutionrelative:mvc_clientematricula\\views\\seccion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{542306CF-1255-46FD-9C8F-D323E098E041}|MVC_ClienteMatricula\\MVC_ClienteMatricula.csproj|c:\\da2prueba\\1522_matriculawcf_entiry\\mvc_clientematricula\\views\\profesor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{542306CF-1255-46FD-9C8F-D323E098E041}|MVC_ClienteMatricula\\MVC_ClienteMatricula.csproj|solutionrelative:mvc_clientematricula\\views\\profesor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -47,32 +38,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\DA2Prueba\\1522_MatriculaWCF_Entiry\\MVC_ClienteMatricula\\Views\\Seccion\\Index.cshtml",
-              "RelativeDocumentMoniker": "MVC_ClienteMatricula\\Views\\Seccion\\Index.cshtml",
-              "ToolTip": "C:\\DA2Prueba\\1522_MatriculaWCF_Entiry\\MVC_ClienteMatricula\\Views\\Seccion\\Index.cshtml",
-              "RelativeToolTip": "MVC_ClienteMatricula\\Views\\Seccion\\Index.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-30T20:43:44.215Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\DA2Prueba\\1522_MatriculaWCF_Entiry\\MVC_ClienteMatricula\\Views\\Profesor\\Index.cshtml",
-              "RelativeDocumentMoniker": "MVC_ClienteMatricula\\Views\\Profesor\\Index.cshtml",
-              "ToolTip": "C:\\DA2Prueba\\1522_MatriculaWCF_Entiry\\MVC_ClienteMatricula\\Views\\Profesor\\Index.cshtml",
-              "RelativeToolTip": "MVC_ClienteMatricula\\Views\\Profesor\\Index.cshtml",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-30T20:43:24.374Z",
-              "EditorCaption": ""
             }
           ]
         },

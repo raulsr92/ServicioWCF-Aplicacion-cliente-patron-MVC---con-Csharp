@@ -73,12 +73,14 @@
     <Compile Include="IServicioCursos.cs" />
     <Compile Include="IServicioProfesores.cs" />
     <Compile Include="IServicioSecciones.cs" />
+    <Compile Include="IServicioSedes.cs" />
     <Compile Include="MetodosReutilizablesCurso.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServicioAlumnos.cs" />
     <Compile Include="ServicioCursos.cs" />
     <Compile Include="ServicioProfesores.cs" />
     <Compile Include="ServicioSecciones.cs" />
+    <Compile Include="ServicioSedes.cs" />
     <Compile Include="Tb_Cursos.cs">
       <DependentUpon>DBMatricula.tt</DependentUpon>
     </Compile>

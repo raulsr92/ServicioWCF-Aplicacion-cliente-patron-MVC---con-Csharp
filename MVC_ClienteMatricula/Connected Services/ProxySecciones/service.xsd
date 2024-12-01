@@ -109,6 +109,20 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="ListarSeccionSede">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCodSede" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarSeccionSedeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/WCF_Matriculas" minOccurs="0" name="ListarSeccionSedeResult" nillable="true" type="q8:ArrayOfSeccionDC" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="ObtenerSeccionesPorCurso">
     <xs:complexType>
       <xs:sequence>
@@ -119,7 +133,7 @@
   <xs:element name="ObtenerSeccionesPorCursoResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/WCF_Matriculas" minOccurs="0" name="ObtenerSeccionesPorCursoResult" nillable="true" type="q8:ArrayOfSeccionDC" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/WCF_Matriculas" minOccurs="0" name="ObtenerSeccionesPorCursoResult" nillable="true" type="q9:ArrayOfSeccionDC" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

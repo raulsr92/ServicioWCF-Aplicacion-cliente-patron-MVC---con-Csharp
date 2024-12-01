@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="8d242bc8-f017-44f6-b81e-421fb600cc17" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/WCF_Matriculas/ServicioSedes/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="081c3798-0887-41d4-b45f-13bdc091a3d5" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WCF_Matriculas/ServicioSedes/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="9730f286-9662-4f94-97c7-b0238413eab6" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WCF_Matriculas/ServicioSedes/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="6011d8ee-345f-4195-bab7-ae0e8fe9d205" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WCF_Matriculas/ServicioSedes/mex" />
+    <MetadataFile FileName="WCF_Matriculas.xsd" MetadataType="Schema" ID="e9731429-fdf4-467f-af53-e2537ead5387" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WCF_Matriculas/ServicioSedes/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

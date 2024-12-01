@@ -142,11 +142,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\ProxySedes\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\CursoController.cs" />
     <Compile Include="Controllers\EspecialidadController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProfesorController.cs" />
     <Compile Include="Controllers\SeccionController.cs" />
+    <Compile Include="Controllers\SedeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -209,6 +215,15 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Connected Services\ProxySedes\configuration91.svcinfo" />
+    <None Include="Connected Services\ProxySedes\configuration.svcinfo" />
+    <Content Include="Connected Services\ProxySedes\MVC_ClienteMatricula.ProxySedes.SedeDC.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ProxySedes\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -260,6 +275,16 @@
     <None Include="Connected Services\ProxySecciones\WCF_Matriculas.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Connected Services\ProxySedes\service.wsdl" />
+    <None Include="Connected Services\ProxySedes\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ProxySedes\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ProxySedes\WCF_Matriculas.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -289,6 +314,7 @@
     <Content Include="Views\Profesor\Index.cshtml" />
     <Content Include="Views\Curso\Index.cshtml" />
     <Content Include="Views\Seccion\Index.cshtml" />
+    <Content Include="Views\Sede\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -329,6 +355,7 @@
     <WCFMetadataStorage Include="Connected Services\ProxyEspecialidades\" />
     <WCFMetadataStorage Include="Connected Services\ProxyProfesores\" />
     <WCFMetadataStorage Include="Connected Services\ProxySecciones\" />
+    <WCFMetadataStorage Include="Connected Services\ProxySedes\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
